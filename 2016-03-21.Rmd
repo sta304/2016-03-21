@@ -1,0 +1,73 @@
+---
+title: 'STA304'
+author: "Neil Montgomery"
+date: "2016-03-21"
+output: 
+  ioslides_presentation: 
+    css: 'styles.css' 
+    widescreen: true 
+    transition: 0.001
+---
+\newcommand{\E}[1]{E{\left(#1\right)}}
+\newcommand{\flist}[2]{\{#1_1, #1_2, \ldots, #1_#2\}}
+\newcommand{\fulist}[3]{\{#1_{{#2}1}, #1_{{#2}2}, \ldots, #1_{{#2}{#3}}\}}
+\renewcommand{\bar}[1]{\overline{#1}}
+\newcommand{\SE}[1]{\sqrt{\hat{V}(#1)}}
+
+# required readings: errors of observation and reducing errors
+
+## what is an error of observation? { .build }
+
+Recall the errors of non-observation: mainly classified as *coverage* errors (difference between target and sampled populations) and *nonresponse* (sampled unit cannot be found or is unable to answer). The result can be a *biased sample*. 
+
+An *error of observation* occurs when the sampled unit has been found and is able to respond, but the observation made is not *true*. So the sample itself could be unbiased, but the observations themselves may not be.
+
+The difficulty with *all* errors that may occur (non-observation or obsevation) is to determine its impact on the results. This requires expertise in the topic under study and is not normally a statistical problem.
+
+The book classifies blame for errors of observation as follows: *interviewer*, *respondent*, *measurement instrument*, *method of data collection*. 
+
+Most observation errors are related to getting information from humans. 
+
+## the effect of the interviewer { .build }
+
+* Humans are social animals...we like to please the interviewer, more so with one who is likeable. 
+
+* We also (subconciously or not) prefer interviewers we feel comfortable with according to social markers like sex, accent, etc. 
+
+Possible ways to minimize impact of errors due to interviewer effect:
+
+* Training, protocol, scripts
+
+* Randomization (optional section 11.2 "interpenetrating subsamples")
+
+## the effect of the respondent { .build }
+
+* The respondent might misunderstand the question (often due to the unit of measurement or the definition of terms...the book refers to these as *measurement instrument* issues.)
+
+* The question might be embarrassing. 
+
+* They simply might not know the correct answer.
+
+Possible ways to minimize impact of errors due to respondent effect:
+
+* Questionnaire design best practices (an enormous field of study)
+
+* For sensitive questions: randomized response (optional section 11.4)
+
+## methods of data collection { .build }
+
+* Personal interview
+
+* Telephone interview
+
+* Mailed survey
+
+* Electronic survey
+
+* Direct observation
+
+## other ways to improve quality of sampling data { .build }
+
+* Data checking (exploratory data analysis)
+
+* Rewards and incentives to interviewers and respondents.
